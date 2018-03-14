@@ -5,8 +5,7 @@ package com.wyizd.chapter05.section07.node02;
  * @createtime 2018年1月22日 上午10:52:19
  * @Title 静态数据的初始化
  * @Discription 
- * 1.	静态数据不论新建多少对象，在内存中只占一份
- * 2.	
+ * 	静态数据不论新建多少对象，在内存中只占一份
  */
 
 class Bowl{
@@ -31,6 +30,9 @@ public class StaticInit {
 	public static void main(String[] args) {
 		Cupboard cupboard = new Cupboard(3);
 		Cupboard cupboard2 = new Cupboard(3);
+		System.out.println(cupboard.table.bowl==cupboard2.table.bowl);
+		//因为设计上的问题,这里相当匪夷所思.两个碗橱的碗竟然是同一个碗。
+		
 		
 	}
 

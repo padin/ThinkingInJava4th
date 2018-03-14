@@ -7,10 +7,7 @@ package com.wyizd.chapter05.section09;
  * @Title 枚举类型
  * @Discription 
  * 枚举是常量集,在JDK1.7之前,常用于switch语句。
- * 
  * 这用法有点诡异，感觉有点反人类 -。-
- * 
- * 
  * 
  */
 enum RMB{
@@ -50,10 +47,6 @@ public class EnumType{
 		yuan.describe();
 		jiao.describe();
 		fen.describe();
-			
-		
-		
-		
 	}
 	
 }

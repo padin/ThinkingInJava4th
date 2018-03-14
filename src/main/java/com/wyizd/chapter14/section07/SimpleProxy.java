@@ -4,7 +4,7 @@ package com.wyizd.chapter14.section07;
  * @author padin
  * @Email 913329364@qq.com
  * @createtime 2018年1月24日 下午7:57:55
- * @Title 代理
+ * @Title 普通代理
  * @Discription
  */
 

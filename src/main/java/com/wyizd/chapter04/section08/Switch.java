@@ -35,18 +35,11 @@ public class Switch {
 			System.out.println("你通过了第二关");
 		case "第一关":
 			System.out.println("你通过了第一关");
-		
-		
 			break;
-		
-
 		default:
 			System.out.println("Game over");
 			break;
 		}
-		
-		
-		
 	}
 
 }

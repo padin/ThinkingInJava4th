@@ -19,8 +19,6 @@ public class TypeCaseOperation {
 		double d = 456.78;
 		double d2= 456.78;
 		
-		
-		
 		d=i;		//隐式类型转换
 		System.out.println(d);
 		i=(int) d2;//强制类型转换
@@ -29,15 +27,8 @@ public class TypeCaseOperation {
 		i2=(int) Math.round(d2);
 		System.out.println(i2);//需要先将double类型舍入再赋值
 		
-		
-		
-		
 		String string = "12345678";
 	//	i= (int) string;	//这样就不行。String不能转为整形
-		
-		
-		
-		
 	}
 
 }

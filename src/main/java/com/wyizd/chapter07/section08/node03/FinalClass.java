@@ -9,7 +9,7 @@ package com.wyizd.chapter07.section08.node03;
 final class MyFinalClass{
 	
 }
-//public class FinalClass extends MyFinalClass{
+//public class FinalClass extends MyFinalClass{ //编译直接不通过
 public class FinalClass  {
 	
 

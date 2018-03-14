@@ -1,7 +1,14 @@
 package com.wyizd.chapter16.section03;
 
 import java.util.*;
-
+/**
+ * 
+ * @author padin 
+ * @Email 913329364@qq.com
+ * @createtime 2018年3月13日 下午9:24:30
+ * @Title 返回一个数组
+ * @Discription
+ */
 public class IceCream {
   private static Random rand = new Random(47);
   static final String[] FLAVORS = {

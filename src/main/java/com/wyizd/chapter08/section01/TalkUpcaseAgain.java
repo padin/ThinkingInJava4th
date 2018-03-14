@@ -1,4 +1,7 @@
 package com.wyizd.chapter08.section01;
+
+import java.util.Random;
+
 /**
  * @author padin
  * @Email 913329364@qq.com
@@ -19,6 +22,7 @@ class Instrument{
 }
 //风乐器
 class Wind extends Instrument {
+
 	void play(Note note) { System.out.println("Wind play -" + note) ;}
 }
 
@@ -29,7 +33,30 @@ public class TalkUpcaseAgain {
 	}
 
 	private static void tune(Instrument i) {
-		i.play(Note.哆);
+		Random random = new Random();
+		int r = random.nextInt(6);
+		
+		switch (r) {
+		case 1:
+			i.play(Note.哆);
+			break;
+		case 2:
+			i.play(Note.唻);
+			break;
+		case 3:
+			i.play(Note.咪);
+			break;
+		case 4:
+			i.play(Note.嗦);
+			break;
+		case 5:
+			i.play(Note.啦);
+			break;
+
+		default:
+			break;
+		}
+		
 	}
 
 }

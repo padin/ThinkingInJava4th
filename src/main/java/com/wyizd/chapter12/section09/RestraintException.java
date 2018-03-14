@@ -5,30 +5,25 @@ package com.wyizd.chapter12.section09;
  * @createtime 2018年1月24日 上午9:58:17
  * @Title 异常的限制
  * @Discription 
+ * 	当子类覆盖基类的方法后,只抛出基类方法的异常里列出的那些异常。
  */
-interface I{
-	void add() throws RuntimeException;
+
+class AException extends Exception{}
+class BException extends AException{}
+class CException extends Exception{}
+abstract class S{
+	abstract void add() throws AException;
 }
-abstract class A{
-	abstract void del() throws RuntimeException;
-}
-public class RestraintException extends A implements I{
+
+
+public class RestraintException extends S {
+
+//	@Override
+//	public void add() throws CException {}
+//	编译不过
 
 	@Override
-	public void add() {
-		// TODO Auto-generated method stub
-		int i = 1/0;
-	}
-
-	@Override
-	void del() {
-		// TODO Auto-generated method stub
-		int i = 1/0;
-	}
-	public static void main(String[] args) {
-		RestraintException restraintException = new RestraintException();
-		restraintException.add();
-		restraintException.del();
-	}
+	void add() throws AException {}
+	
 
 }

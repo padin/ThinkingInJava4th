@@ -12,6 +12,5 @@ public class AirFilter extends Filter {
 		public AirFilter create() {
 			return new AirFilter(); 
 		}
-		
 	}
 }

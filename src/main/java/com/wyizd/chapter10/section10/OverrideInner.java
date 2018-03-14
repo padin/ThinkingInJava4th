@@ -1,6 +1,5 @@
 package com.wyizd.chapter10.section10;
 
-import java.io.IOError;
 
 /**
  * @author padin
